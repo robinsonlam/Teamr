@@ -1,15 +1,14 @@
 // ====================================================================
-// Variables - Colors
+// Typography Styles
 // ====================================================================
 
-$color-white: #eee;
 
 // ====================================================================
-// Variables - Spacing & Layout
+// Typography Styles - Imports
 // ====================================================================
 
-$padding-small: 				5px;
-$padding-half: 				  10px;
-$padding-general: 			20px;
-$padding-large: 			  30px;
-$padding-double:		 	  40px;
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
