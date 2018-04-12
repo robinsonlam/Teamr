@@ -6,3 +6,7 @@ An web application designed and developed for Sports Coaches, allowing them to e
 
 - React
 - Node
+
+## Features
+
+- In Development
