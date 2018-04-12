@@ -1,0 +1,74 @@
+// ====================================================================
+// Navigation Bar Header Component
+// ====================================================================
+
+@import '../../styles/_variables';
+
+.navigationBar {
+  display: flex;
+  background: $color-black;
+
+  color: $color-white;
+  padding: $padding-general;
+}
+
+.logo {
+  img {
+    padding-top: 2px;
+    height: 36px;
+  }
+}
+
+.navigationItems {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navigationLink {
+  position: relative;
+  transition: all 0.34s ease-in-out;
+  color: $color-white;
+  margin-right: $padding-general;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:before {
+    transition: all 0.67s ease-in-out;
+    content: '';
+    position: absolute;
+    left: $padding-small;
+    top: 0;
+    right: $padding-small;
+    bottom: -$padding-small;
+
+    border-bottom: 1px solid transparent;
+  }
+
+
+  &:hover {
+    color: $color-main;
+
+    &:before {
+      content: '';
+      border-bottom: 1px solid $color-main;
+    }
+  }
+
+  &.active {
+    color: $color-main;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: $padding-small;
+      top: 0;
+      right: $padding-small;
+      bottom: -$padding-small;
+
+      border-bottom: 1px solid $color-main;
+    }
+  }
+}
