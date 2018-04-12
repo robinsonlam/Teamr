@@ -14,6 +14,7 @@ ReactDOM.render(
   <BrowserRouter>
     <App>
       <Route path="/" component={Landing}/>
+      <Route path="/login" component={Landing}/>
     </App>
   </BrowserRouter>, destination
 );

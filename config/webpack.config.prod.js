@@ -97,7 +97,8 @@ module.exports = {
       '@components': `${process.cwd()}/src/components`,
       '@containers': `${process.cwd()}/src/containers`,
       '@utils': `${process.cwd()}/src/utils`,
-      '@styles': `${process.cwd()}/src/styles`
+      '@styles': `${process.cwd()}/src/styles`,
+      '@assets': `${process.cwd()}/src/assets`
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).
