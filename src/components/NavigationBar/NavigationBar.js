@@ -23,7 +23,7 @@ class NavigationBar extends Component {
 
         <nav className={styles.navigationItems}>
           {/* Logged In */}
-          <NavLink className={styles.navigationLink} activeClassName={`${styles.active}`} to="/login">My Teams</NavLink>
+          <NavLink className={styles.navigationLink} activeClassName={`${styles.active}`} to="/myteams">My Teams</NavLink>
 
           {/* Not Logged In */}
           <NavLink className={styles.navigationLink} activeClassName={`${styles.active}`} to="/login">Log In</NavLink>
