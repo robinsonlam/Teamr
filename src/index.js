@@ -13,7 +13,7 @@ const destination = document.getElementById('root');
 ReactDOM.render(
   <BrowserRouter>
     <App>
-      <Route path="/" component={Landing}/>
+      <Route exact path="/" component={Landing}/>
       <Route path="/myteams" component={MyTeams}/>
       <Route path="/login" component={Landing}/>
     </App>

@@ -29,7 +29,6 @@ class MyTeams extends Component {
   async _fetchTeams() {
     try {
       const teams = await api.getTeams();
-      console.log(teams);
       this.setState({ teamsData: { ...this.state.teamsData, payload: teams } });
     } catch (e) {
       console.log(e);
